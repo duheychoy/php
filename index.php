@@ -85,7 +85,7 @@
     // 遍历教程列表并生成 HTML 内容
 foreach ($tutorial_list as $item) {
             $name = htmlspecialchars($item["name"], ENT_QUOTES, 'UTF-8');
-            $url = htmlspecialchars($site["url"], ENT_QUOTES, 'UTF-8');
+            $url = htmlspecialchars($item["url"], ENT_QUOTES, 'UTF-8');
             echo "<li><a href=\"$url\" target=\"_blank\">$name</a></li>";
         }
          ?>
