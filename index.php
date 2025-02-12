@@ -40,7 +40,7 @@
 </head>
 
 <body>
-    <h1>Git与GitHub教程网站列表</h1>
+    <h2>Git与GitHub教程网站列表</h2>
     <ul>
         <?php
         // 定义一个包含 Git 教程网站信息的数组
