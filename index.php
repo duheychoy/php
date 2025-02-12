@@ -68,27 +68,28 @@
         ?>
     </ul>
     <h2>GitHub教程合集</h2>
+    <ul>
     <?php
     // 定义教程列表数组
     $tutorial_list = [
         [
-            'name' => '教程1',
-            'url' => 'https://example.com/tutorial1'
+            "name" => "教程1",
+            "url" => "https://example.com/tutorial1"
         ],
         [
-            'name' => '教程2',
-            'url' => 'https://example.com/tutorial2'
+            "name" => "教程2",
+            "url" => "https://example.com/tutorial2"
         ]
     ];
 
     // 遍历教程列表并生成 HTML 内容
-    foreach ($tutorial_list as $item) {
-        ?>
-        <h3><?php echo htmlspecialchars($item['name'], ENT_QUOTES, 'UTF-8'); ?></h3>
-        <p>跳转到教程：<a href="<?php echo htmlspecialchars($item['url'], ENT_QUOTES, 'UTF-8'); ?>">查看教程</a></p>
-        <?php
-    }
-    ?>
+foreach ($tutorial_list as $item) {
+            $name = htmlspecialchars($item["name"], ENT_QUOTES, 'UTF-8');
+            $url = htmlspecialchars($site["url"], ENT_QUOTES, 'UTF-8');
+            echo "<li><a href=\"$url\" target=\"_blank\">$name</a></li>";
+        }
+         ?>
+       </ul>
 </body>
 
 </html>
