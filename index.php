@@ -70,16 +70,16 @@
     <h2>GitHub教程合集</h2>
     <?php
     // 定义教程列表数组
-    $tutorial_list = array(
-        array(
+    $tutorial_list = [
+        [
             'name' => '教程1',
             'url' => 'https://example.com/tutorial1'
-        ),
-        array(
+        ],
+        [
             'name' => '教程2',
             'url' => 'https://example.com/tutorial2'
-        )
-    );
+        ]
+    ];
 
     // 遍历教程列表并生成 HTML 内容
     foreach ($tutorial_list as $item) {
